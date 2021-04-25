@@ -10,7 +10,7 @@ import UIKit
 class ChooseViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var tableView = UITableView()
-    var choose: [user] = []
+    var choose: [User] = []
     
     struct Cells {
         static let chooseCell = "ChooseTableViewCell"
@@ -55,8 +55,8 @@ class ChooseViewController: UIViewController, UITableViewDelegate, UITableViewDa
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
-    func fetchData() -> [user] {
-        let cell1 = user(image: Images.pizza, title: "Pizza")
+    func fetchData() -> [User] {
+        let cell1 = User(image: Images.pizza, title: "Pizza")
         return [cell1]
     }
 

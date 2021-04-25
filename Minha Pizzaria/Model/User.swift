@@ -7,9 +7,19 @@
 
 import UIKit
 
-struct user {
+struct User {
     
     var image: UIImage
     var title: String
     
+}
+
+struct SignInPayload: Codable {
+    let email: String
+    let password: String
+}
+
+struct SignInResponse: Codable {
+    let accessToken: String
+    let tokenType: String
 }

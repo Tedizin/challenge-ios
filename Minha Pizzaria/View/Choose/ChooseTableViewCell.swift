@@ -28,7 +28,7 @@ class ChooseTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func set(choose: user) {
+    func set(choose: User) {
         chooseImageView.image = choose.image
         chooseTitleLabel.text = choose.title
         

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class LoginViewController: UIViewController {
     
@@ -16,48 +17,40 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.queryAPI()
 
     }
     
     //MARK: - Properties
     
     @IBAction func signInButton(_ sender: Any) {
-        self.queryAPI()    }
+        self.queryAPI()
+        
+    }
     
     //MARK: - Selectors
     
     //MARK: - API
     
     func queryAPI(){
-        let baseURL = "https://p3teufi0k9.execute-api.us-east-1.amazonaws.com/v1"
-        let path = "/signin"
         
-        guard let url = URL(string: baseURL + path) else { return }
+        let baseURL = "https://p3teufi0k9.execute-api.us-east-1.amazonaws.com"
+        let path = "/v1/signin"
         
-        let task = URLSession.shared.dataTask(with: url) { (data, request, error) in
-            if let error = error {
-                print("Error request \(error)")
+        guard let url = URL(string: baseURL + path)
+        
+        else {
+            return
+        }
+        
+        let payload = SignInPayload(email: "user@xds.com.br", password: "223344")
+        
+        AF.request(url, method: .post, parameters: payload, encoder: JSONParameterEncoder.default).responseDecodable(of: SignInResponse.self) { (result) in
+            guard let response = result.value, result.error == nil else {
+                print("Error request. \(String(describing: result.error))")
                 return
             }
-            do {
-                guard let dataReturn = data,
-                      
-                      let objectJSON = try JSONSerialization.jsonObject(with: dataReturn, options: []) as? [String: Any],
-                      let email = objectJSON["email"] as? [String: Any],
-
-                      let _ = email["password"] as? [String: Any]
-                else {
-                    return
-                }
-                DispatchQueue.main.async {
-                }
-            }
-            catch {
-                print("Erro ao formatar o retorno.")
-            }
-        }
-        task.resume()
+            print(response)
+        }.resume()
     }
 
 }
