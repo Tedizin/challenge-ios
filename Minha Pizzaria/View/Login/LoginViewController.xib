@@ -1,24 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Minha_Pizzaria" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Minha_Pizzaria">
             <connections>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="passwordTextField" destination="WDI-tq-j6I" id="f21-rA-EOW"/>
+                <outlet property="userTextField" destination="RhM-Xj-a3C" id="x3R-vE-GXK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="jsa-U6-aCH"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bXW-p8-lSk">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="262"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico-logo2" translatesAutoresizingMaskIntoConstraints="NO" id="tB7-SJ-Y9E">
+                            <rect key="frame" x="39" y="47" width="297" height="176"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="tB7-SJ-Y9E" firstAttribute="top" secondItem="bXW-p8-lSk" secondAttribute="topMargin" constant="39" id="51g-oT-eFb"/>
+                        <constraint firstAttribute="bottom" secondItem="tB7-SJ-Y9E" secondAttribute="bottom" constant="39" id="PHL-rE-NzQ"/>
+                        <constraint firstAttribute="trailing" secondItem="tB7-SJ-Y9E" secondAttribute="trailing" constant="39" id="jak-u4-9gn"/>
+                        <constraint firstItem="tB7-SJ-Y9E" firstAttribute="leading" secondItem="bXW-p8-lSk" secondAttribute="leading" constant="39" id="ylR-Kx-IwJ"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entrar" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSs-NP-v5I">
+                    <rect key="frame" x="22" y="286" width="64.5" height="28"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Usuário" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="RhM-Xj-a3C">
+                    <rect key="frame" x="20" y="332" width="335" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="fZH-sf-6gD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WDI-tq-j6I">
+                    <rect key="frame" x="20" y="399" width="335" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="QuR-Fn-tf1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYu-bz-gxh">
+                    <rect key="frame" x="56" y="504" width="263" height="53"/>
+                    <color key="backgroundColor" red="0.4781972766" green="0.7777419686" blue="0.30799207090000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="53" id="lFn-Qe-rFd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="Entrar">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="signInButton:" destination="-1" eventType="touchUpInside" id="MNj-Wr-Wd7"/>
+                    </connections>
+                </button>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-            <point key="canvasLocation" x="-39" y="82"/>
+            <color key="backgroundColor" red="0.15666434169999999" green="0.17212188240000001" blue="0.18924161789999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="RhM-Xj-a3C" secondAttribute="trailing" constant="20" id="J2A-zt-SHh"/>
+                <constraint firstItem="bXW-p8-lSk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="K0x-oJ-6d4"/>
+                <constraint firstItem="kSs-NP-v5I" firstAttribute="top" secondItem="bXW-p8-lSk" secondAttribute="bottom" constant="24" id="Kbg-8r-NqQ"/>
+                <constraint firstItem="RhM-Xj-a3C" firstAttribute="top" secondItem="kSs-NP-v5I" secondAttribute="bottom" constant="18" id="TmS-Ns-xPe"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eYu-bz-gxh" secondAttribute="trailing" constant="56" id="WPA-bj-jhz"/>
+                <constraint firstItem="WDI-tq-j6I" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="b08-pj-I6z"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WDI-tq-j6I" secondAttribute="trailing" constant="20" id="be5-WL-S0U"/>
+                <constraint firstItem="WDI-tq-j6I" firstAttribute="top" secondItem="RhM-Xj-a3C" secondAttribute="bottom" constant="17" id="cPh-zu-hL7"/>
+                <constraint firstItem="bXW-p8-lSk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dlx-e0-Ur4"/>
+                <constraint firstItem="eYu-bz-gxh" firstAttribute="top" secondItem="WDI-tq-j6I" secondAttribute="bottom" constant="55" id="hRN-Tb-KtO"/>
+                <constraint firstItem="RhM-Xj-a3C" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="k3l-Jr-mLj"/>
+                <constraint firstItem="kSs-NP-v5I" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="22" id="m1G-um-PDZ"/>
+                <constraint firstItem="bXW-p8-lSk" firstAttribute="right" secondItem="fnl-2z-Ty3" secondAttribute="right" id="pTf-lv-GZs"/>
+                <constraint firstItem="eYu-bz-gxh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="56" id="v8P-MZ-6rE"/>
+            </constraints>
+            <point key="canvasLocation" x="-73.125" y="83.75"/>
         </view>
     </objects>
+    <resources>
+        <image name="ico-logo2" width="297" height="176"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

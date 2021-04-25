@@ -5,4 +5,11 @@
 //  Created by Henrique Silva on 22/04/21.
 //
 
-import Foundation
+import UIKit
+
+struct user {
+    
+    var image: UIImage
+    var title: String
+    
+}
