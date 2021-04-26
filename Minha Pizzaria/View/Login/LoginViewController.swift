@@ -23,34 +23,21 @@ class LoginViewController: UIViewController {
     //MARK: - Properties
     
     @IBAction func signInButton(_ sender: Any) {
-        self.queryAPI()
-        
+        let email = userTextField.text ?? ""
+        let password = passwordTextField.text ?? ""
+        Service().signIn(email: email, password: password) { response in
+            guard let response = response
+            else {
+                // Aqui vai ser exibido um alerta de erro
+                print("Erro")
+                return
+            }
+            //Aqui vai ser passado os valor para tela de Escolha
+            self.userTextField.text = response.tokenType
+            print(response)
+        }
     }
     
     //MARK: - Selectors
-    
-    //MARK: - API
-    
-    func queryAPI(){
-        
-        let baseURL = "https://p3teufi0k9.execute-api.us-east-1.amazonaws.com"
-        let path = "/v1/signin"
-        
-        guard let url = URL(string: baseURL + path)
-        
-        else {
-            return
-        }
-        
-        let payload = SignInPayload(email: "user@xds.com.br", password: "223344")
-        
-        AF.request(url, method: .post, parameters: payload, encoder: JSONParameterEncoder.default).responseDecodable(of: SignInResponse.self) { (result) in
-            guard let response = result.value, result.error == nil else {
-                print("Error request. \(String(describing: result.error))")
-                return
-            }
-            print(response)
-        }.resume()
-    }
 
 }

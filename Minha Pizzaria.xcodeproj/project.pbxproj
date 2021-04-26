@@ -13,10 +13,6 @@
 		0B80741726325BF300CDF762 /* ChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B80741626325BF300CDF762 /* ChooseViewController.swift */; };
 		0B80741A26325BFD00CDF762 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B80741926325BFD00CDF762 /* DetailsViewController.swift */; };
 		0B80741D26325C0800CDF762 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B80741C26325C0800CDF762 /* StatusViewController.swift */; };
-		0B80742026325CBD00CDF762 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B80741F26325CBD00CDF762 /* LoginPresenter.swift */; };
-		0B80742326325CD000CDF762 /* ChoosePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B80742226325CD000CDF762 /* ChoosePresenter.swift */; };
-		0B80742626325D2F00CDF762 /* DetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B80742526325D2F00CDF762 /* DetailsPresenter.swift */; };
-		0B80742926325D4900CDF762 /* StatusPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B80742826325D4900CDF762 /* StatusPresenter.swift */; };
 		0B80742D26325DC900CDF762 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B80742C26325DC900CDF762 /* Service.swift */; };
 		0BA279DF26322A53005594AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA279DE26322A53005594AC /* AppDelegate.swift */; };
 		0BA279E126322A53005594AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA279E026322A53005594AC /* SceneDelegate.swift */; };
@@ -34,10 +30,6 @@
 		0B80741626325BF300CDF762 /* ChooseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseViewController.swift; sourceTree = "<group>"; };
 		0B80741926325BFD00CDF762 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		0B80741C26325C0800CDF762 /* StatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
-		0B80741F26325CBD00CDF762 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
-		0B80742226325CD000CDF762 /* ChoosePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePresenter.swift; sourceTree = "<group>"; };
-		0B80742526325D2F00CDF762 /* DetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPresenter.swift; sourceTree = "<group>"; };
-		0B80742826325D4900CDF762 /* StatusPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusPresenter.swift; sourceTree = "<group>"; };
 		0B80742C26325DC900CDF762 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		0BA279DB26322A53005594AC /* Minha Pizzaria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Minha Pizzaria.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BA279DE26322A53005594AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,17 +74,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		0B8074052632593A00CDF762 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				0B80741026325A9400CDF762 /* Login */,
-				0B80740F26325A8C00CDF762 /* Choose */,
-				0B80740E26325A8300CDF762 /* Details */,
-				0B80740D26325A7D00CDF762 /* Status */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
 		0B8074082632596600CDF762 /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,38 +116,6 @@
 			path = Status;
 			sourceTree = "<group>";
 		};
-		0B80740D26325A7D00CDF762 /* Status */ = {
-			isa = PBXGroup;
-			children = (
-				0B80742826325D4900CDF762 /* StatusPresenter.swift */,
-			);
-			path = Status;
-			sourceTree = "<group>";
-		};
-		0B80740E26325A8300CDF762 /* Details */ = {
-			isa = PBXGroup;
-			children = (
-				0B80742526325D2F00CDF762 /* DetailsPresenter.swift */,
-			);
-			path = Details;
-			sourceTree = "<group>";
-		};
-		0B80740F26325A8C00CDF762 /* Choose */ = {
-			isa = PBXGroup;
-			children = (
-				0B80742226325CD000CDF762 /* ChoosePresenter.swift */,
-			);
-			path = Choose;
-			sourceTree = "<group>";
-		};
-		0B80741026325A9400CDF762 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				0B80741F26325CBD00CDF762 /* LoginPresenter.swift */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
 		0BA279D226322A52005594AC = {
 			isa = PBXGroup;
 			children = (
@@ -188,7 +137,6 @@
 			children = (
 				0B8074032632592900CDF762 /* Model */,
 				0B8074042632593400CDF762 /* View */,
-				0B8074052632593A00CDF762 /* Presenter */,
 				0B8074082632596600CDF762 /* API */,
 				0BC8EF7F2634CD8200AF321E /* Utilities */,
 				0BA279DE26322A53005594AC /* AppDelegate.swift */,
@@ -286,9 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BA279F926322AA2005594AC /* User.swift in Sources */,
-				0B80742026325CBD00CDF762 /* LoginPresenter.swift in Sources */,
 				0B80741726325BF300CDF762 /* ChooseViewController.swift in Sources */,
-				0B80742326325CD000CDF762 /* ChoosePresenter.swift in Sources */,
 				0BC8EF812634CDC200AF321E /* Utilities.swift in Sources */,
 				0BC8EF872634EBE700AF321E /* Constants.swift in Sources */,
 				0BA279DF26322A53005594AC /* AppDelegate.swift in Sources */,
@@ -298,8 +244,6 @@
 				0BA279E126322A53005594AC /* SceneDelegate.swift in Sources */,
 				0B80741326325BCC00CDF762 /* LoginViewController.swift in Sources */,
 				0B80741A26325BFD00CDF762 /* DetailsViewController.swift in Sources */,
-				0B80742626325D2F00CDF762 /* DetailsPresenter.swift in Sources */,
-				0B80742926325D4900CDF762 /* StatusPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
