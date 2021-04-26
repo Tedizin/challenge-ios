@@ -15,11 +15,15 @@ struct User {
 }
 
 struct SignInPayload: Codable {
+    
     let email: String
     let password: String
+    
 }
 
 struct SignInResponse: Codable {
+    
     let accessToken: String
     let tokenType: String
+    
 }
