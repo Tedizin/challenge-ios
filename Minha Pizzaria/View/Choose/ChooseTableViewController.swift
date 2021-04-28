@@ -19,6 +19,7 @@ class ChooseTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
+        
         return 1
     }
 
@@ -32,7 +33,7 @@ class ChooseTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as! ChooseTableViewCell
         
         cell.pizzaUIImage.image = pizza.image
-        //cell.pizzaUIImage.layer.cornerRadius = 10
+        cell.pizzaUIImage.layer.cornerRadius = 10
         cell.pizzaUIImage.clipsToBounds = true
         
         cell.categoryUILabel.text = pizza.category
@@ -43,7 +44,8 @@ class ChooseTableViewController: UITableViewController {
     }
 
     // MARK: - Navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
+    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let indexPath = tableView.indexPathForSelectedRow {
             let select = self.pizzas[ indexPath.row ]
             
@@ -51,6 +53,8 @@ class ChooseTableViewController: UITableViewController {
             destinationVC.pizza = select
             
         }
-    }
-    
+    }*/
+
 }
+    
+

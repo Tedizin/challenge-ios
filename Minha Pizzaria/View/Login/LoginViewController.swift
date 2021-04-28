@@ -27,7 +27,7 @@ class LoginViewController: UIViewController {
             }
             //Aqui vai ser passado os valor para tela de Escolha
             self.userTextField.text = response.tokenType
-            print(response)
+            //print(response)
         }
     }
     
