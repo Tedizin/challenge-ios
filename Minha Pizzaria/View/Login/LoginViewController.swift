@@ -14,8 +14,9 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var userTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var signInButton: UIButton!
     
-    @IBAction func signInButton(_ sender: Any) {
+    func signIn() {
         let email = userTextField.text ?? ""
         let password = passwordTextField.text ?? ""
         Service().signIn(email: email, password: password) { response in
@@ -26,16 +27,19 @@ class LoginViewController: UIViewController {
                 return
             }
             //Aqui vai ser passado os valor para tela de Escolha
+            if let user = self.userTextField.text {
+                if let password = self.passwordTextField.text {
+                }
+            }
             self.userTextField.text = response.tokenType
-            //print(response)
+            print(response)
         }
     }
-    
     //MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        signInButton.layer.cornerRadius = 10
     }
     
     //MARK: - Selectors

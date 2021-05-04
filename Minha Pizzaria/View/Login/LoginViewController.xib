@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Minha_Pizzaria">
             <connections>
                 <outlet property="passwordTextField" destination="WDI-tq-j6I" id="f21-rA-EOW"/>
+                <outlet property="signInButton" destination="eYu-bz-gxh" id="s7U-uQ-36H"/>
                 <outlet property="userTextField" destination="RhM-Xj-a3C" id="x3R-vE-GXK"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="jsa-U6-aCH"/>
             </connections>
@@ -41,7 +42,7 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Usuário" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="RhM-Xj-a3C">
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Usuário" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="RhM-Xj-a3C">
                     <rect key="frame" x="20" y="350" width="335" height="50"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
@@ -50,7 +51,7 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                 </textField>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WDI-tq-j6I">
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WDI-tq-j6I">
                     <rect key="frame" x="20" y="417" width="335" height="50"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
@@ -69,9 +70,6 @@
                     <state key="normal" title="Entrar">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
-                    <connections>
-                        <action selector="signInButton:" destination="-1" eventType="touchUpInside" id="MNj-Wr-Wd7"/>
-                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

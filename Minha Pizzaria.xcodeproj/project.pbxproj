@@ -11,12 +11,14 @@
 		0B59C2DD2637656000C1E689 /* ChooseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B59C2DB2637656000C1E689 /* ChooseTableViewCell.xib */; };
 		0B59C2E026376A6800C1E689 /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B59C2DF26376A6800C1E689 /* Pizza.swift */; };
 		0B5F47ED2635D46E00703802 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0B5F47EC2635D46E00703802 /* Alamofire */; };
+		0B73BB99263F86420024B1FA /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B73BB97263F86420024B1FA /* DetailsViewController.swift */; };
+		0B73BB9A263F86420024B1FA /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B73BB98263F86420024B1FA /* DetailsViewController.xib */; };
+		0B73BB9E263F86500024B1FA /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B73BB9C263F86500024B1FA /* StatusViewController.swift */; };
+		0B73BB9F263F86500024B1FA /* StatusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B73BB9D263F86500024B1FA /* StatusViewController.xib */; };
 		0B7F11C12637294800C05AE0 /* ChooseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7F11BF2637294800C05AE0 /* ChooseTableViewController.swift */; };
 		0B7F11C22637294800C05AE0 /* ChooseTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B7F11C02637294800C05AE0 /* ChooseTableViewController.xib */; };
 		0B80741326325BCC00CDF762 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B80741126325BCC00CDF762 /* LoginViewController.swift */; };
 		0B80741426325BCC00CDF762 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B80741226325BCC00CDF762 /* LoginViewController.xib */; };
-		0B80741A26325BFD00CDF762 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B80741926325BFD00CDF762 /* DetailsViewController.swift */; };
-		0B80741D26325C0800CDF762 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B80741C26325C0800CDF762 /* StatusViewController.swift */; };
 		0B80742D26325DC900CDF762 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B80742C26325DC900CDF762 /* Service.swift */; };
 		0BA279DF26322A53005594AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA279DE26322A53005594AC /* AppDelegate.swift */; };
 		0BA279E126322A53005594AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA279E026322A53005594AC /* SceneDelegate.swift */; };
@@ -31,12 +33,14 @@
 		0B59C2DA2637656000C1E689 /* ChooseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseTableViewCell.swift; sourceTree = "<group>"; };
 		0B59C2DB2637656000C1E689 /* ChooseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseTableViewCell.xib; sourceTree = "<group>"; };
 		0B59C2DF26376A6800C1E689 /* Pizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
+		0B73BB97263F86420024B1FA /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		0B73BB98263F86420024B1FA /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
+		0B73BB9C263F86500024B1FA /* StatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
+		0B73BB9D263F86500024B1FA /* StatusViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatusViewController.xib; sourceTree = "<group>"; };
 		0B7F11BF2637294800C05AE0 /* ChooseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseTableViewController.swift; sourceTree = "<group>"; };
 		0B7F11C02637294800C05AE0 /* ChooseTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseTableViewController.xib; sourceTree = "<group>"; };
 		0B80741126325BCC00CDF762 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0B80741226325BCC00CDF762 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
-		0B80741926325BFD00CDF762 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
-		0B80741C26325C0800CDF762 /* StatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
 		0B80742C26325DC900CDF762 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		0BA279DB26322A53005594AC /* Minha Pizzaria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Minha Pizzaria.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BA279DE26322A53005594AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,7 +116,8 @@
 		0B80740B263259EE00CDF762 /* Details */ = {
 			isa = PBXGroup;
 			children = (
-				0B80741926325BFD00CDF762 /* DetailsViewController.swift */,
+				0B73BB97263F86420024B1FA /* DetailsViewController.swift */,
+				0B73BB98263F86420024B1FA /* DetailsViewController.xib */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -120,7 +125,8 @@
 		0B80740C26325A3300CDF762 /* Status */ = {
 			isa = PBXGroup;
 			children = (
-				0B80741C26325C0800CDF762 /* StatusViewController.swift */,
+				0B73BB9C263F86500024B1FA /* StatusViewController.swift */,
+				0B73BB9D263F86500024B1FA /* StatusViewController.xib */,
 			);
 			path = Status;
 			sourceTree = "<group>";
@@ -230,10 +236,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B80741426325BCC00CDF762 /* LoginViewController.xib in Resources */,
+				0B73BB9F263F86500024B1FA /* StatusViewController.xib in Resources */,
 				0BA279EB26322A54005594AC /* LaunchScreen.storyboard in Resources */,
 				0B7F11C22637294800C05AE0 /* ChooseTableViewController.xib in Resources */,
 				0BA279E826322A54005594AC /* Assets.xcassets in Resources */,
 				0B59C2DD2637656000C1E689 /* ChooseTableViewCell.xib in Resources */,
+				0B73BB9A263F86420024B1FA /* DetailsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,15 +255,15 @@
 				0BA279F926322AA2005594AC /* User.swift in Sources */,
 				0BC8EF812634CDC200AF321E /* Utilities.swift in Sources */,
 				0BC8EF872634EBE700AF321E /* Constants.swift in Sources */,
+				0B73BB99263F86420024B1FA /* DetailsViewController.swift in Sources */,
+				0B73BB9E263F86500024B1FA /* StatusViewController.swift in Sources */,
 				0BA279DF26322A53005594AC /* AppDelegate.swift in Sources */,
 				0B7F11C12637294800C05AE0 /* ChooseTableViewController.swift in Sources */,
 				0B80742D26325DC900CDF762 /* Service.swift in Sources */,
-				0B80741D26325C0800CDF762 /* StatusViewController.swift in Sources */,
 				0B59C2DC2637656000C1E689 /* ChooseTableViewCell.swift in Sources */,
 				0B59C2E026376A6800C1E689 /* Pizza.swift in Sources */,
 				0BA279E126322A53005594AC /* SceneDelegate.swift in Sources */,
 				0B80741326325BCC00CDF762 /* LoginViewController.swift in Sources */,
-				0B80741A26325BFD00CDF762 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
