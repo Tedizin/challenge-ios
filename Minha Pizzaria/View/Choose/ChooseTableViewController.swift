@@ -19,12 +19,13 @@ class ChooseTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        
         return 1
+        
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return pizzas.count
+        
     }
 
     
@@ -41,19 +42,8 @@ class ChooseTableViewController: UITableViewController {
         cell.priceUILabel.text = pizza.price
 
         return cell
+        
     }
-
-    // MARK: - Navigation
-    
-    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let indexPath = tableView.indexPathForSelectedRow {
-            let select = self.pizzas[ indexPath.row ]
-            
-            let destinationVC = segue.destination as! ChooseTableViewCell
-            destinationVC.pizza = select
-            
-        }
-    }*/
 
 }
     

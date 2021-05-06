@@ -11,7 +11,6 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Minha_Pizzaria">
             <connections>
                 <outlet property="passwordTextField" destination="WDI-tq-j6I" id="f21-rA-EOW"/>
-                <outlet property="signInButton" destination="eYu-bz-gxh" id="s7U-uQ-36H"/>
                 <outlet property="userTextField" destination="RhM-Xj-a3C" id="x3R-vE-GXK"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="jsa-U6-aCH"/>
             </connections>
@@ -70,6 +69,9 @@
                     <state key="normal" title="Entrar">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="signInUIButton:" destination="-1" eventType="touchUpInside" id="fBW-64-N1l"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

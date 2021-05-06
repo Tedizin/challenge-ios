@@ -14,9 +14,7 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var userTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var signInButton: UIButton!
-    
-    func signIn() {
+    @IBAction func signInUIButton(_ sender: Any) {
         let email = userTextField.text ?? ""
         let password = passwordTextField.text ?? ""
         Service().signIn(email: email, password: password) { response in
@@ -39,9 +37,6 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        signInButton.layer.cornerRadius = 10
     }
-    
-    //MARK: - Selectors
 
 }
